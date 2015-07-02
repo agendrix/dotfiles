@@ -27,5 +27,6 @@ source $ZSH/oh-my-zsh.sh
 eval "$(hub alias -s)"
 alias gdt="git difftool"
 alias rake="noglob bundled_rake" # https://github.com/robbyrussell/oh-my-zsh/issues/433
-alias rclean="rdd && rdc && rdm && rds"
+alias rclean="rake b:drop db:create db:migrate db:seed"
+alias rload="rake db:drop db:create db:schema:load db:seed"
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;"
