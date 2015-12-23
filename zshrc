@@ -14,7 +14,7 @@ plugins=(ruby rake brew git pow bundler agendrix)
 # ENV variables
 #
 export EDITOR='subl -w'
-export PATH="$HOME/.bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin:$PATH"
 
 # Homebrew rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
