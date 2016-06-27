@@ -13,10 +13,6 @@ plugins=(ruby rake brew git pow bundler agendrix)
 #
 # Commands
 #
-p()  { cd ~/Projects/$1; }
-_p() { _files -W ~/Projects -/; }
-compdef _p p
-
 load_dump() {
   dropdb $2
   createdb $2
