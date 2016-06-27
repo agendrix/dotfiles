@@ -6,7 +6,6 @@ task :install do
   install_oh_my_zsh
   switch_to_zsh
   replace_all = false
-  sh  "#{File.dirname(__FILE__)}/osx"
   files = Dir['*'] - %w[Rakefile README.md LICENSE oh-my-zsh]
   files << "oh-my-zsh/custom/plugins/agendrix"
   files << "oh-my-zsh/custom/agendrix.zsh-theme"
@@ -35,6 +34,11 @@ task :install do
       link_file(file)
     end
   end
+end
+
+desc "Set MacOS defaults"
+task :osx do
+  sh "#{File.dirname(__FILE__)}/osx"
 end
 
 def replace_file(file)

@@ -19,6 +19,16 @@ After installing, open a new terminal window to see the effects.
 
 Feel free to customize the .zshrc file to match your preference.
 
+## Using your own config along
+
+These dotfiles require this file:
+
+```
+~/.zshrc.local
+```
+
+Here you can add your own mapping without risking to lose them when updating the repo :)
+
 ## Uninstall
 
 To remove the dotfiles configurations, run the following commands. Be certain to double check the contents of the files before removing so you don't lose custom settings.

@@ -23,9 +23,13 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source $ZSH/oh-my-zsh.sh
 
 #
-# Aliases
+# Team aliases
 #
-eval "$(hub alias -s)"
 alias gdt="git difftool"
 alias rake="noglob bundled_rake" # https://github.com/robbyrussell/oh-my-zsh/issues/433
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;"
+
+#
+# Local aliases
+#
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
