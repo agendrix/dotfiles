@@ -37,8 +37,8 @@ task :install do
 end
 
 desc "Set MacOS defaults"
-task :osx do
-  sh "#{File.dirname(__FILE__)}/osx"
+task :macos do
+  sh "#{File.dirname(__FILE__)}/macOS"
 end
 
 def replace_file(file)
