@@ -24,14 +24,14 @@ load_dump() {
 #
 unsetopt correct_all
 
+# Homebrew rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 #
 # ENV variables
 #
 export EDITOR='subl -w'
 export PATH="$HOME/.bin:/usr/local/bin:$HOME/.chefdk/gem/ruby/2.1.0/bin:$PATH"
-
-# Homebrew rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
