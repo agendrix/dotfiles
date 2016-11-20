@@ -39,7 +39,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Team aliases
 #
-alias update="sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup;"
+alias update="sudo softwareupdate -i -a; brew update; brew upgrade"
 alias gdt="git difftool"
 alias rake="noglob bundled_rake" # https://github.com/robbyrussell/oh-my-zsh/issues/433
 alias rclean_schema="rake db:drop db:create db:schema:load db:fixtures:load db:seed"
