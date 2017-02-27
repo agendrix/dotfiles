@@ -31,7 +31,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # ENV variables
 #
 export EDITOR='subl -w'
-export PATH="$HOME/.bin:/opt/chefdk/bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:$PATH"
+export PATH="$HOME/.bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:/opt/chefdk/bin:$PATH"
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
