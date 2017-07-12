@@ -8,7 +8,7 @@ DISABLE_LS_COLORS="true"
 
 UNBUNDLED_COMMANDS=(knife chef)
 
-plugins=(ruby rake brew git pow agendrix)
+plugins=(ruby rake brew git agendrix)
 
 #
 # Commands
