@@ -41,9 +41,7 @@ source $ZSH/oh-my-zsh.sh
 #
 alias update="sudo softwareupdate -i -a; brew update; brew upgrade"
 alias gdt="git difftool"
-alias rclean_schema="rake db:drop db:create db:schema:load db:fixtures:load db:seed"
-alias rclean_structure="rake db:drop db:create db:structure:load db:fixtures:load db:seed"
-alias rclean_migrate="rake db:drop db:create db:migrate db:fixtures:load db:seed"
+alias rclean="rake db:drop db:create db:structure:load db:migrate db:seed"
 alias be="bundle exec"
 
 #
