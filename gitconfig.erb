@@ -18,18 +18,10 @@
   rebase = true
 [branch]
   autosetuprebase = always
-[mergetool]
-  keepBackup = false
 [apply]
   whitespace = nowarn
 [format]
   pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
-[difftool]
-  prompt = false
-[difftool "Kaleidoscope"]
-  cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
-[diff]
-  tool = Kaleidoscope
 [rerere]
   enabled = 1
 [github]
