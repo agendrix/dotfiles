@@ -30,7 +30,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #
 # ENV variables
 #
-export EDITOR='subl -w'
+export EDITOR='code --wait'
 export PATH="$HOME/.bin:$HOME/.chefdk/gem/ruby/2.3.0/bin:/opt/chefdk/bin:$PATH"
 
 # Load oh-my-zsh
