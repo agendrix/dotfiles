@@ -56,7 +56,7 @@ Then open a new terminal window to see the effects.
 
 ## About
 
-![agendrix](https://user-images.githubusercontent.com/304461/31439242-6fe93940-ae59-11e7-8829-9b7a992fb87f.png)
+<img src="https://user-images.githubusercontent.com/25696312/72089341-dde0a300-32d9-11ea-818d-3f27de8b12e5.png" alt="agendrix logo" height="45">
 
 [Agendrix](http://www.agendrix.com) is a team of passionate on a mission to create more pleasant and productive workplaces with innovative software, an exceptional team and unparalleled customer service.
 
