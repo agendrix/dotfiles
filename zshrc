@@ -33,6 +33,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export EDITOR='code --wait'
 export PATH="$HOME/.bin:$PATH"
 
+# Node
+export PATH="/usr/local/opt/node@14/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@14/lib"
+export CPPFLAGS="-I/usr/local/opt/node@14/include"
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
