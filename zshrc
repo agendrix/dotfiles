@@ -24,14 +24,20 @@ load_dump() {
 #
 unsetopt correct_all
 
-# Homebrew rbenv
+# rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #
 # ENV variables
 #
-export EDITOR='code --wait'
 export PATH="$HOME/.bin:$PATH"
+
+# VSCode
+export EDITOR='code --wait'
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Homebrew
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Node
 export PATH="/usr/local/opt/node@14/bin:$PATH"
