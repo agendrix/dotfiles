@@ -44,6 +44,9 @@ export PATH="/usr/local/opt/node@14/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/node@14/lib"
 export CPPFLAGS="-I/usr/local/opt/node@14/include"
 
+# Ruby
+export RUBYOPT='--enable-yjit'
+
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
