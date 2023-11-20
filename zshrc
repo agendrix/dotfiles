@@ -40,12 +40,15 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 export PATH="/opt/homebrew/bin:$PATH"
 
 # Node
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-export LDFLAGS="-L/usr/local/opt/node@14/lib"
-export CPPFLAGS="-I/usr/local/opt/node@14/include"
+export PATH="/usr/local/opt/node@18/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@18/lib"
+export CPPFLAGS="-I/usr/local/opt/node@18/include"
 
 # Ruby
 export RUBYOPT='--enable-yjit'
+
+# Ruby & MacOS bug, issue: https://github.com/rails/rails/issues/38560
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 # Load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
